@@ -31,5 +31,10 @@ export default createGlobalStyle`
 
 	a {
 		display: inline-block;
+		text-decoration: none;
+	}
+
+	.App {
+		overflow-x: hidden;
 	}
 `;

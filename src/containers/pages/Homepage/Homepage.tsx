@@ -1,6 +1,7 @@
 import React from 'react';
+import { Hero } from './style';
 
 const Homepage = () => {
-	return <div>Homepage</div>;
+	return <Hero></Hero>;
 };
 export default Homepage;

@@ -2,17 +2,19 @@ import React from 'react';
 import { Navigation, NavigationLink, Logo } from '../general/style';
 
 // Assets
-import LogoImg from '../../assets/Group 3.svg';
+import LogoImg from '../../assets/logo.svg';
 
 const Nav = () => {
 	return (
 		<Navigation>
-			<Logo src={LogoImg} />
-			<NavigationLink>Home</NavigationLink>
-			<NavigationLink>About Us</NavigationLink>
-			<NavigationLink>Services</NavigationLink>
-			<NavigationLink>Blog</NavigationLink>
-			<NavigationLink>Portfolio</NavigationLink>
+			<NavigationLink href='#'>
+				<Logo src={LogoImg} />
+			</NavigationLink>
+			<NavigationLink href='#'>Home</NavigationLink>
+			<NavigationLink href='#'>About Us</NavigationLink>
+			<NavigationLink href='#'>Services</NavigationLink>
+			<NavigationLink href='#'>Blog</NavigationLink>
+			<NavigationLink href='#'>Portfolio</NavigationLink>
 		</Navigation>
 	);
 };

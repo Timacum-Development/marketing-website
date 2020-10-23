@@ -1,7 +1,8 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { HeaderWrap } from '../Header/style';
-import { Button } from '../../../shared/components';
+import { MainLink } from '../../../shared/components';
+
 // Assets
 import Nav from '../Nav';
 
@@ -11,8 +12,11 @@ const Header = () => {
 			<nav>
 				<Nav />
 			</nav>
-			<Button text='Contact us' variant='outline' />
-			<Button text='Contact us 2' />
+			<MainLink
+				text='Contact us'
+				outline
+				style={{ padding: '18px 0 19px 0', borderRadius: '40px' }}
+			/>
 		</HeaderWrap>
 	);
 };
