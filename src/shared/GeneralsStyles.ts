@@ -27,6 +27,7 @@ export default createGlobalStyle`
 	h6 {
 		margin: 0;
 		text-align: left;
+		color: ${color.white}; 
 	}
 
 	a {
@@ -37,4 +38,13 @@ export default createGlobalStyle`
 	.App {
 		overflow-x: hidden;
 	}
+
+	p {
+		font-size: 1.25rem;
+		line-height: 1.875rem;
+		letter-spacing: 0.6px;
+		font-style: italic;
+		font-weight: 300;
+	}
+
 `;

@@ -11,8 +11,13 @@ export const NavigationLink = styled.a`
 	font-size: 1.25rem;
 	line-height: 1.25rem;
 	font-weight: 300;
+	font-style: italic;
 	color: ${color.white};
 	padding: 0 40px;
+
+	&:first-child {
+		padding: 0;
+	}
 `;
 
 export const Logo = styled.img`

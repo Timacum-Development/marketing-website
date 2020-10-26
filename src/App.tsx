@@ -6,7 +6,7 @@ import Layout from './containers/general/Layout';
 
 function App() {
 	return (
-		<div className='App container'>
+		<div className='App'>
 			<GeneralStyles />
 			<Layout />
 		</div>

@@ -8,15 +8,11 @@ import Nav from '../Nav';
 
 const Header = () => {
 	return (
-		<HeaderWrap>
+		<HeaderWrap className='container'>
 			<nav>
 				<Nav />
 			</nav>
-			<MainLink
-				text='Contact us'
-				outline
-				style={{ padding: '18px 0 19px 0', borderRadius: '40px' }}
-			/>
+			<MainLink text='Contact us' style={{ padding: '18px 40px 19px 40px' }} />
 		</HeaderWrap>
 	);
 };
