@@ -35,9 +35,9 @@ export default createGlobalStyle`
 		text-decoration: none;
 	}
 
-	.App {
+	/* .App {
 		overflow-x: hidden;
-	}
+	} */
 
 	p {
 		font-size: 1.25rem;
@@ -45,6 +45,18 @@ export default createGlobalStyle`
 		letter-spacing: 0.6px;
 		font-style: italic;
 		font-weight: 300;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+		line-height: 3.75rem;
+		letter-spacing: 1.2px;
+	}
+
+	h3 {
+		font-size: 1.875rem;
+		line-height: 2.875rem;
+		letter-spacing: 0.9px;
 	}
 
 `;

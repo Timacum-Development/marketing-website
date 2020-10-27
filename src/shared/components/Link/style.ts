@@ -27,6 +27,5 @@ export const LinkFirst = styled.a`
 `;
 
 export const LinkSecond = styled.a`
-	color: ${color.lightPurple};
-	background-color: ${color.white};
+	display: block;
 `;

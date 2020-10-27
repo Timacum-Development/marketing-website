@@ -4,13 +4,9 @@ import { MainButton } from './style';
 const Button = (props: any) => {
 	console.log(props);
 
-	const { img } = props;
+	const { btnUrl } = props;
 
-	return (
-		<React.Fragment>
-			<MainButton>{img}</MainButton>
-		</React.Fragment>
-	);
+	return <MainButton src={btnUrl}></MainButton>;
 };
 
 export default Button;

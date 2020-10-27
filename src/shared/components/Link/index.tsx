@@ -4,7 +4,7 @@ import { LinkFirst, LinkSecond } from './style';
 const MainLink = (props: any) => {
 	console.log(props);
 
-	const { text, full, onClick, style, icon } = props;
+	const { text, full, onClick, style, icon, logoUrl } = props;
 
 	return (
 		<React.Fragment>
@@ -21,7 +21,7 @@ const MainLink = (props: any) => {
 				</LinkFirst>
 			) : (
 				<LinkSecond style={style} onClick={onClick} href='#'>
-					<img src='' alt='' />
+					<img src={logoUrl} alt='' />
 				</LinkSecond>
 			)}
 		</React.Fragment>
