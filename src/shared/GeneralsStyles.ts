@@ -18,6 +18,10 @@ export default createGlobalStyle`
 		margin: 0 auto;
 	}
 
+	.container-fluid {
+		width: 100%;
+	}
+
 	p,
 	h1,
 	h2,
@@ -57,6 +61,13 @@ export default createGlobalStyle`
 		font-size: 1.875rem;
 		line-height: 2.875rem;
 		letter-spacing: 0.9px;
+	}
+
+	h4 {
+		font-size: 1.25rem;
+		line-height: 1.875rem;
+		letter-spacing: 0.6px;
+		margin-bottom: 10px;
 	}
 
 `;

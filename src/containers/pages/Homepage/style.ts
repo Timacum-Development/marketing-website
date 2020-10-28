@@ -20,8 +20,8 @@ export const HeroBg = styled.div`
 	background: url(${background}) no-repeat top left;
 	background-size: cover;
 	position: absolute;
-	top: -400px;
-	left: 120px;
+	top: -395px;
+	left: 124px;
 `;
 
 export const HeroIntro = styled.div`
@@ -92,42 +92,36 @@ export const LogoWrap = styled.div`
 `;
 
 export const TextWrap = styled.div`
-	margin-top: 250px;
+	margin-top: 180px;
 `;
 
 export const AboutUs = styled.section`
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+  align-items: center;
+	justify-content: flex-start;
+	
+}
 `;
 
 export const AboutUsImg = styled.div`
 	width: 50%;
 	max-width: 777px;
-	height: 652px;
+	height: 0;
+	padding-bottom: 652px;
 	background: url(${laptop}) no-repeat;
 	background-size: cover;
+	margin-right: 63px;
 `;
 
 export const AboutUsWrap = styled.div`
-	width: 50%;
 	max-width: 520px;
 `;
 
 export const ThirdTitle = styled.h3`
 	text-transform: capitalize;
-	text-align: center;
 	margin-bottom: 40px;
 	text-align: left;
-	/* position: relative;
-
-	&:before {
-		content: '';
-		width: 100px;
-		height: 2px;
-		background-color: ${color.white};
-		position: absolute;
-	} */
 `;
 
 export const Line = styled.div`
@@ -136,14 +130,12 @@ export const Line = styled.div`
 	background-color: ${color.white};
 	position: relative;
 	top: 25px;
-	right: -80px;
 `;
 
-export const AboutText = styled.p`
+export const SmallText = styled.p`
 	font-size: 1rem;
 	line-height: 1.625rem;
 	letter-spacing: 0.48px;
-	font-family: 'Roboto, sans-serif';
 	margin-bottom: 40px;
 
 	&:first-child {
@@ -151,6 +143,13 @@ export const AboutText = styled.p`
 		line-height: 2rem;
 		letter-spacing: 0.66px;
 	}
+`;
+
+export const AboutLineWrap = styled.div`
+	width: 660px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 `;
 
 export const Numbers = styled.section`
@@ -169,6 +168,7 @@ export const NumbersWrap = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+	margin-bottom: 180px;
 }
 `;
 
@@ -184,3 +184,35 @@ export const LargeNumber = styled.span`
 export const LargeNumberWrap = styled.div`
 	display: block;
 `;
+
+export const PurpleWrap = styled.section`
+	background-color: ${color.purple};
+`;
+
+export const Services = styled.section`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+`;
+
+export const CardWrap = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+`;
+
+export const InsideCard = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+`;
+
+export const CardText = styled.div`
+	max-width: 510px;
+`;
+
+// export const FourthTitle = styled.h4`
+// 	text-transform: capitalize;
+// 	margin-bottom: 10px;
+// 	text-align: left;
+// `;
