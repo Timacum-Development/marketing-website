@@ -4,9 +4,9 @@ import { MainButton } from './style';
 const Button = (props: any) => {
 	console.log(props);
 
-	const { btnUrl } = props;
+	const { btnUrl, style } = props;
 
-	return <MainButton src={btnUrl}></MainButton>;
+	return <MainButton style={style} src={btnUrl}></MainButton>;
 };
 
 export default Button;

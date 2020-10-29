@@ -1,14 +1,13 @@
 import React from 'react';
-import { LinkFirst, LinkSecond } from './style';
+import { LinkFirst, LinkSecond, LinkThird } from './style';
 
 const MainLink = (props: any) => {
 	console.log(props);
 
-	const { text, full, onClick, style, icon, logoUrl } = props;
-
+	const { text, full, onClick, style, icon, logoUrl, plus, plusUrl } = props;
 	return (
 		<React.Fragment>
-			{!icon ? (
+			{!icon && !plus ? (
 				<LinkFirst
 					style={style}
 					// style={{ backgroundColor: variant ? 'red' : 'green' }}
@@ -19,10 +18,14 @@ const MainLink = (props: any) => {
 					href='#'>
 					{text}
 				</LinkFirst>
-			) : (
+			) : !plus && !plusUrl ? (
 				<LinkSecond style={style} onClick={onClick} href='#'>
 					<img src={logoUrl} alt='' />
 				</LinkSecond>
+			) : (
+				<LinkThird onClick={onClick} href='#'>
+					<img src={plusUrl} alt='img plus'></img>
+				</LinkThird>
 			)}
 		</React.Fragment>
 	);

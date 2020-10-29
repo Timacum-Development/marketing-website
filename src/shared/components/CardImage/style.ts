@@ -7,3 +7,8 @@ export const ImgCard = styled.img`
 	height: 120px;
 	margin-right: 40px;
 `;
+
+export const PortfolioImg = styled.img`
+	width: 380px;
+	height: 242px;
+`;

@@ -30,6 +30,9 @@ import {
 	CardWrap,
 	InsideCard,
 	CardText,
+	Portfolio,
+	ButtonWrap,
+	Blog,
 } from './style';
 
 // Assets
@@ -45,6 +48,15 @@ import Img1 from '../../../assets/card-img1.svg';
 import Img2 from '../../../assets/card-img2.svg';
 import Img3 from '../../../assets/card-img3.svg';
 import Img4 from '../../../assets/card-img4.svg';
+import ImgPlus from '../../../assets/plus.svg';
+import People1 from '../../../assets/portfolio1.svg';
+import People2 from '../../../assets/portfolio2.svg';
+import People3 from '../../../assets/portfolio3.svg';
+import People4 from '../../../assets/portfolio4.svg';
+import Post1 from '../../../assets/office.png';
+import Post2 from '../../../assets/office2.png';
+import Post3 from '../../../assets/office3.png';
+import Post4 from '../../../assets/bussines.png';
 
 import { LinkSecond } from '../../../shared/components/Link/style';
 import { ImgCard } from '../../../shared/components/CardImage/style';
@@ -159,24 +171,100 @@ const Homepage = () => {
 							heading='Link Building'
 							text='We ll earn white hat backlinks and send qualified traffic to your business through guest posting.'
 							url={Img1}
+							plus
+							cross={ImgPlus}
 						/>
 						<Card
 							heading='SEO Services'
 							text='From content creation to consulting and keyword research, we can help you outrank your competition.'
 							url={Img2}
+							plus
+							cross={ImgPlus}
 						/>
 						<Card
 							heading='Web Design & Development'
 							text='We make websites that dont just look great, but are also optimized for UX, conversions, and search engine visibility.'
 							url={Img3}
+							plus
+							cross={ImgPlus}
 						/>
 						<Card
 							heading='Done-For-You Marketing'
 							text='Outsource all your marketing needs to a dedicated marketing team handpicked just for your business.'
+							plus
 							url={Img4}
+							cross={ImgPlus}
 						/>
 					</CardWrap>
 				</Services>
+				<Portfolio className='container'>
+					<TextWrap>
+						<Text>Awesome Portfolio</Text>
+						<SecondTitle>We Have A Great Portfolio To Check</SecondTitle>
+					</TextWrap>
+					<CardWrap>
+						<Card
+							portfolio={People1}
+							project
+							heading='Web Design project'
+							text='UX/UI Design'
+						/>
+						<Card
+							portfolio={People2}
+							project
+							heading='Web Design project'
+							text='UX/UI Design'
+						/>
+						<Card
+							portfolio={People3}
+							project
+							heading='Web Design project'
+							text='UX/UI Design'
+						/>
+						<Card
+							portfolio={People4}
+							project
+							heading='Web Design project'
+							text='UX/UI Design'
+						/>
+					</CardWrap>
+					<ButtonWrap>
+						<Button style={{ marginRight: '20px' }} btnUrl={LeftArrow} alt='' />
+						<Button btnUrl={RightArrow} alt='' />
+					</ButtonWrap>
+				</Portfolio>
+				<Blog className='container'>
+					<TextWrap>
+						<Text>Our Blogs</Text>
+						<SecondTitle>Our Blog & article</SecondTitle>
+					</TextWrap>
+					<CardWrap>
+						<Card
+							text='August 27, 2020'
+							portfolio={Post3}
+							heading='Why we decided to create Build Your DXP'
+						/>
+						<Card
+							text='August 27, 2020'
+							portfolio={Post4}
+							heading='Why we decided to create Build Your DXP'
+						/>
+						<Card
+							text='August 27, 2020'
+							portfolio={Post2}
+							heading='Why we decided to create Build Your DXP'
+						/>
+						<Card
+							text='August 27, 2020'
+							portfolio={Post1}
+							heading='Why we decided to create Build Your DXP'
+						/>
+					</CardWrap>
+					<ButtonWrap>
+						<Button style={{ marginRight: '20px' }} btnUrl={LeftArrow} alt='' />
+						<Button btnUrl={RightArrow} alt='' />
+					</ButtonWrap>
+				</Blog>
 			</PurpleWrap>
 		</React.Fragment>
 	);

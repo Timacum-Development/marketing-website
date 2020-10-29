@@ -29,3 +29,18 @@ export const LinkFirst = styled.a`
 export const LinkSecond = styled.a`
 	display: block;
 `;
+
+export const LinkThird = styled.a`
+	width: 80px;
+	height: 80px;
+	background-color: ${color.purple};
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+`;

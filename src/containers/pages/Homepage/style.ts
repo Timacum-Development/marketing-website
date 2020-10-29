@@ -211,8 +211,22 @@ export const CardText = styled.div`
 	max-width: 510px;
 `;
 
-// export const FourthTitle = styled.h4`
-// 	text-transform: capitalize;
-// 	margin-bottom: 10px;
-// 	text-align: left;
-// `;
+export const SmallTxt = styled.p`
+	font-size: 1rem;
+	line-height: 1.625rem;
+	letter-spacing: 0.48px;
+`;
+
+export const Portfolio = styled.section`
+	display: block;
+	margin-bottom: 180px;
+`;
+
+export const ButtonWrap = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 60px;
+`;
+
+export const Blog = styled.section``;
