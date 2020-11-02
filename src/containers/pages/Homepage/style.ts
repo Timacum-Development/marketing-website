@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { color, font } from '../../../shared/utils/styles';
+import styled from "styled-components";
+import { color, font } from "../../../shared/utils/styles";
 
 // Assets
-import background from '../../../assets/background.png';
-import laptop from '../../../assets/laptop.png';
+import background from "../../../assets/background.png";
+import laptop from "../../../assets/laptop.png";
 
 export const Hero = styled.section`
 	height: calc(100vh - 60px);
@@ -15,84 +15,84 @@ export const Hero = styled.section`
 `;
 
 export const HeroBg = styled.div`
-	width: 100%;
-	height: 1542px;
-	background: url(${background}) no-repeat top left;
-	background-size: cover;
-	position: absolute;
-	top: -395px;
-	left: 124px;
+  width: 100%;
+  height: 1542px;
+  background: url(${background}) no-repeat top left;
+  background-size: cover;
+  position: absolute;
+  top: -395px;
+  left: 124px;
 `;
 
 export const HeroIntro = styled.div`
-	min-width: 557px;
-	margin-left: 16px;
-	z-index: 10;
+  min-width: 557px;
+  margin-left: 16px;
+  z-index: 10;
 `;
 
 export const MainTitle = styled.h1`
-	font-size: 5rem;
-	line-height: 7.5rem;
-	letter-spacing: 2.4px;
-	margin-bottom: 40px;
+  font-size: 5rem;
+  line-height: 7.5rem;
+  letter-spacing: 2.4px;
+  margin-bottom: 40px;
 `;
 
 export const MainTitleFirst = styled.span`
-	display: block;
-	font-size: 3.125rem;
-	line-height: 4.75rem;
-	letter-spacing: 1.5px;
+  display: block;
+  font-size: 3.125rem;
+  line-height: 4.75rem;
+  letter-spacing: 1.5px;
 `;
 
 export const MainTitleSecond = styled.span`
-	display: block;
-	font-size: 3.75rem;
-	line-height: 5.625rem;
-	letter-spacing: 1.8px;
+  display: block;
+  font-size: 3.75rem;
+  line-height: 5.625rem;
+  letter-spacing: 1.8px;
 `;
 
 export const MainText = styled.p`
-	text-align: left;
-	max-width: 484px;
-	margin-bottom: 40px;
+  text-align: left;
+  max-width: 484px;
+  margin-bottom: 40px;
 `;
 
 export const IntroBtns = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 `;
 
 export const Partners = styled.section`
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const Text = styled.p`
-	text-transform: capitalize;
-	text-align: center;
-	margin-bottom: 10px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 10px;
 `;
 
 export const SecondTitle = styled.h2`
-	text-transform: capitalize;
-	text-align: center;
-	margin-bottom: 60px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 60px;
 `;
 
 export const LogoWrap = styled.div`
-	width: 100%;
-	max-width: 1360px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-bottom: 180px;
+  width: 100%;
+  max-width: 1360px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 180px;
 `;
 
 export const TextWrap = styled.div`
-	margin-top: 180px;
+  margin-top: 180px;
 `;
 
 export const AboutUs = styled.section`
@@ -105,57 +105,57 @@ export const AboutUs = styled.section`
 `;
 
 export const AboutUsImg = styled.div`
-	width: 50%;
-	max-width: 777px;
-	height: 0;
-	padding-bottom: 652px;
-	background: url(${laptop}) no-repeat;
-	background-size: cover;
-	margin-right: 63px;
+  width: 50%;
+  max-width: 777px;
+  height: 0;
+  padding-bottom: 652px;
+  background: url(${laptop}) no-repeat;
+  background-size: cover;
+  margin-right: 63px;
 `;
 
 export const AboutUsWrap = styled.div`
-	max-width: 520px;
+  max-width: 520px;
 `;
 
 export const ThirdTitle = styled.h3`
-	text-transform: capitalize;
-	margin-bottom: 40px;
-	text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  text-align: left;
 `;
 
 export const Line = styled.div`
-	width: 100px;
-	height: 2px;
-	background-color: ${color.white};
-	position: relative;
-	top: 25px;
+  width: 100px;
+  height: 2px;
+  background-color: ${color.white};
+  position: relative;
+  top: 25px;
 `;
 
 export const SmallText = styled.p`
-	font-size: 1rem;
-	line-height: 1.625rem;
-	letter-spacing: 0.48px;
-	margin-bottom: 40px;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.48px;
+  margin-bottom: 40px;
 
-	&:first-child {
-		font-size: 1.375rem;
-		line-height: 2rem;
-		letter-spacing: 0.66px;
-	}
+  &:first-child {
+    font-size: 1.375rem;
+    line-height: 2rem;
+    letter-spacing: 0.66px;
+  }
 `;
 
 export const AboutLineWrap = styled.div`
-	width: 660px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+  width: 660px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 export const Numbers = styled.section`
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const NumbersWrap = styled.div`
@@ -173,60 +173,200 @@ export const NumbersWrap = styled.div`
 `;
 
 export const LargeNumber = styled.span`
-	display: inline-block;
-	font-size: 6.25rem;
-	line-height: 9.375rem;
-	letter-spacing: 3px;
-	color: ${color.white};
-	font-weight: 700;
+  display: inline-block;
+  font-size: 6.25rem;
+  line-height: 9.375rem;
+  letter-spacing: 3px;
+  color: ${color.white};
+  font-weight: 700;
 `;
 
 export const LargeNumberWrap = styled.div`
-	display: block;
+  display: block;
 `;
 
 export const PurpleWrap = styled.section`
-	background-color: ${color.purple};
+  background-color: ${color.purple};
 `;
 
 export const Services = styled.section`
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const CardWrap = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 export const InsideCard = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 `;
 
 export const CardText = styled.div`
-	max-width: 510px;
+  max-width: 510px;
 `;
 
 export const SmallTxt = styled.p`
-	font-size: 1rem;
-	line-height: 1.625rem;
-	letter-spacing: 0.48px;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.48px;
 `;
 
 export const Portfolio = styled.section`
-	display: block;
-	margin-bottom: 180px;
+  display: block;
+  margin-bottom: 180px;
 `;
 
 export const ButtonWrap = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
 `;
 
 export const Blog = styled.section``;
+
+export const FooterService = styled.div`
+  width: 100%;
+  position: relative;
+`;
+
+export const ServiceWrap = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const DoubleShape = styled.img`
+  display: block;
+  width: 484px;
+  height: 597px;
+  position: relative;
+  left: -74px;
+  top: -180px;
+`;
+export const Letter = styled.img`
+  display: block;
+  width: 173px;
+  height: 196px;
+  margin-bottom: 40px;
+`;
+
+export const Circle = styled.img`
+  display: block;
+  width: 190px;
+  height: 148px;
+`;
+
+export const ServiceTextWrap = styled.div`
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+`;
+
+export const ServiceTitle = styled.h2`
+  margin-bottom: 0;
+  text-align: center;
+`;
+
+export const ServiceText = styled.p`
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.48px;
+  max-width: 510px;
+  margin-bottom: 40px;
+`;
+
+export const SubscribeWrap = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+`;
+
+export const Email = styled.input`
+  width: 667px;
+  border: 1px solid ${color.white};
+  border-radius: 40px;
+  background-color: ${color.lavander};
+  padding: 29px 0 29px 29px;
+  outline: none;
+
+  &::placeholder {
+    color: ${color.white};
+  }
+`;
+
+export const Subscribe = styled.input`
+  padding: 19px 58px;
+  border-radius: 40px;
+  background-color: ${color.white};
+  outline: none;
+  border: none;
+  position: absolute;
+  right: 480px;
+  top: 10px;
+  color: ${color.lightPurple};
+`;
+
+export const MainFooter = styled.footer`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`;
+
+export const FooterCard = styled.div`
+  width: 25%;
+  margin-top: 100px;
+
+  &:nth-child(1) {
+    max-width: 380px;
+  }
+
+  &:nth-child(2) {
+    max-width: 240px;
+  }
+
+  &:nth-child(3) {
+    max-width: 240px;
+  }
+
+  &:nth-child(1) {
+    max-width: 380px;
+  }
+`;
+
+export const FooterLine = styled.div`
+  width: 100%;
+  border: 1px solid ${color.lightLavander};
+  margin-bottom: 40px;
+`;
+
+export const IconWrap = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`;
+
+export const SocialIcon = styled.div``;
+
+export const Icon = styled.img`
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+`;
