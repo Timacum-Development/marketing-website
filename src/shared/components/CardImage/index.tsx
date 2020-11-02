@@ -1,4 +1,3 @@
-import { SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS } from 'constants';
 import React from 'react';
 import { ImgCard, PortfolioImg } from './style';
 
