@@ -10,4 +10,7 @@ export const HeaderWrap = styled.header`
 	align-items: center;
 	position: relative;
 	z-index: 20;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 `;

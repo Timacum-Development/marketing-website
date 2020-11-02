@@ -12,6 +12,14 @@ export const MainCard = styled.div`
 	padding: 65px 0 65px 40px;
 	box-sizing: border-box;
 	position: relative;
+
+	&:nth-child(3) {
+		margin-bottom: 0;
+	}
+
+	&:nth-child(4) {
+		margin-bottom: 0;
+	}
 `;
 
 export const SecondCard = styled.div`

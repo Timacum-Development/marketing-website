@@ -5,12 +5,18 @@ import { color, font } from '../../../shared/utils/styles';
 import background from '../../../assets/background.png';
 import laptop from '../../../assets/laptop.png';
 
-export const Hero = styled.section`
+export const Hero = styled.div`
 	height: calc(100vh - 60px);
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
+`;
+
+export const HeroWrapper = styled.section`
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 210px;
 `;
 
 export const HeroBg = styled.div`
@@ -270,6 +276,9 @@ export const Circle = styled.img`
 	display: block;
 	width: 190px;
 	height: 148px;
+	position: absolute;
+	right: 0;
+	top: 150px;
 `;
 
 export const ServiceTextWrap = styled.div`
@@ -280,7 +289,7 @@ export const ServiceTextWrap = styled.div`
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
-  top: 0;
+  top: 130px;
 }
 `;
 
@@ -327,7 +336,7 @@ export const Subscribe = styled.input`
 	outline: none;
 	border: none;
 	position: absolute;
-	right: 480px;
+	right: 10px;
 	top: 10px;
 	color: ${color.lightPurple};
 	transition: 0.3s;
@@ -340,16 +349,12 @@ export const Subscribe = styled.input`
 
 export const MainFooter = styled.footer`
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 `;
 
 export const FooterCard = styled.div`
 	width: 25%;
-	margin-top: 100px;
 
-	/&:nth-child(1) {
+	&:nth-child(1) {
 		max-width: 380px;
 	}
 
@@ -359,11 +364,21 @@ export const FooterCard = styled.div`
 
 	&:nth-child(3) {
 		max-width: 240px;
+		padding-top: 40px;
 	}
 
 	&:nth-child(4) {
 		max-width: 380px;
 	}
+`;
+
+export const FooterCardWrap = styled.div`
+	width: 1514px;
+	padding-top: 80px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 `;
 
 export const FooterLine = styled.div`
@@ -393,6 +408,7 @@ export const FooterText = styled.p`
 	letter-spacing: 0.48px;
 	text-align: left;
 	margin-top: 20px;
+	font-weight: 300;
 `;
 
 export const FooterLink = styled.a`
@@ -403,10 +419,13 @@ export const FooterLink = styled.a`
 	margin-bottom: 5px;
 	color: ${color.white};
 	font-style: italic;
+	font-weight: 300;
 `;
 
 export const FooterHeading = styled.h4`
-	&:first-child {
+	text-transform: capitalize;
+
+	&:first-of-type {
 		text-transform: uppercase;
 	}
 `;

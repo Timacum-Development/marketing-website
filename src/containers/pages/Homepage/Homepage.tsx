@@ -56,6 +56,8 @@ import {
 	FooterHeading,
 	Shape,
 	ShapeSecond,
+	HeroWrapper,
+	FooterCardWrap,
 } from './style';
 
 import { Logo } from '../../general/style';
@@ -99,28 +101,30 @@ import { ImgCard } from '../../../shared/components/CardImage/style';
 const Homepage = () => {
 	return (
 		<React.Fragment>
-			<Hero className='container'>
-				<HeroBg />
-				<HeroIntro>
-					<MainTitle>
-						<MainTitleFirst>We help to </MainTitleFirst>Solve Clients
-						<MainTitleSecond>Problems</MainTitleSecond>
-					</MainTitle>
-					<MainText>
-						Our Activate suite of business apps gives your Lorem ipsum dolor sit
-						amet, consectetur.
-					</MainText>
-					<IntroBtns>
-						<MainLink
-							href='#'
-							text='Our Portfolio'
-							style={{ padding: '18px 92px 19px 92px' }}
-							full
-						/>
-						<Button btnUrl={play} alt='' />
-					</IntroBtns>
-				</HeroIntro>
-			</Hero>
+			<HeroWrapper className='container-fluid'>
+				<Hero className='container'>
+					<HeroBg />
+					<HeroIntro>
+						<MainTitle>
+							<MainTitleFirst>We help to </MainTitleFirst>Solve Clients
+							<MainTitleSecond>Problems</MainTitleSecond>
+						</MainTitle>
+						<MainText>
+							Our Activate suite of business apps gives your Lorem ipsum dolor
+							sit amet, consectetur.
+						</MainText>
+						<IntroBtns>
+							<MainLink
+								href='#'
+								text='Our Portfolio'
+								style={{ padding: '18px 92px 19px 92px' }}
+								full
+							/>
+							<Button btnUrl={play} alt='' />
+						</IntroBtns>
+					</HeroIntro>
+				</Hero>
+			</HeroWrapper>
 			<Partners className='container'>
 				<TextWrap>
 					<Text>These companies trust us</Text>
@@ -320,9 +324,9 @@ const Homepage = () => {
 				</Blog>
 			</PurpleWrap>
 			<FooterService className='container'>
+				<DoubleShape src={FooterImg1} />
+				<Circle src={FooterImg3} />
 				<ServiceWrap>
-					<DoubleShape src={FooterImg1} />
-					<Circle src={FooterImg3} />
 					<ServiceTextWrap>
 						<Letter src={FooterImg2} />
 						<ServiceTitle>Like our service? Subscribe us</ServiceTitle>
@@ -338,35 +342,37 @@ const Homepage = () => {
 				</ServiceWrap>
 			</FooterService>
 			<MainFooter className='container'>
-				<FooterCard>
-					<Logo src={LogoFooter} />
-					<FooterText>
-						Proin ac quam et lectus vestibulum blandit. Nunc maximus nibh at
-						placerat tincidunt. Nam sem lacus, ornare non ante sed, ultricies
-						fringilla massa.
-					</FooterText>
-				</FooterCard>
-				<FooterCard>
-					<FooterHeading>Company</FooterHeading>
-					<FooterLink>About us</FooterLink>
-					<FooterLink>Contact us</FooterLink>
-					<FooterLink>Careers</FooterLink>
-					<FooterLink>Support</FooterLink>
-				</FooterCard>
-				<FooterCard>
-					<FooterLink>FAQ</FooterLink>
-					<FooterLink>Terms</FooterLink>
-					<FooterLink>Privacy</FooterLink>
-					<FooterLink>Blog</FooterLink>
-				</FooterCard>
-				<FooterCard>
-					<FooterHeading>Contact</FooterHeading>
-					<FooterLink>Phone: +1 605 722 2032</FooterLink>
-					<FooterLink>Email: example@mail.com </FooterLink>
-					<FooterLink>
-						Address: Charlotte, North Carolina, United States
-					</FooterLink>
-				</FooterCard>
+				<FooterCardWrap>
+					<FooterCard>
+						<Logo src={LogoFooter} />
+						<FooterText>
+							Proin ac quam et lectus vestibulum blandit. Nunc maximus nibh at
+							placerat tincidunt. Nam sem lacus, ornare non ante sed, ultricies
+							fringilla massa.
+						</FooterText>
+					</FooterCard>
+					<FooterCard>
+						<FooterHeading>Company</FooterHeading>
+						<FooterLink>About us</FooterLink>
+						<FooterLink>Contact us</FooterLink>
+						<FooterLink>Careers</FooterLink>
+						<FooterLink>Support</FooterLink>
+					</FooterCard>
+					<FooterCard>
+						<FooterLink>FAQ</FooterLink>
+						<FooterLink>Terms</FooterLink>
+						<FooterLink>Privacy</FooterLink>
+						<FooterLink>Blog</FooterLink>
+					</FooterCard>
+					<FooterCard>
+						<FooterHeading>Contact</FooterHeading>
+						<FooterLink>Phone: +1 605 722 2032</FooterLink>
+						<FooterLink>Email: example@mail.com </FooterLink>
+						<FooterLink>
+							Address: Charlotte, North Carolina, United States
+						</FooterLink>
+					</FooterCard>
+				</FooterCardWrap>
 				<FooterLine />
 				<IconWrap>
 					<SocialIcon>
