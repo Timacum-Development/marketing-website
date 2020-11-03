@@ -353,22 +353,22 @@ const Homepage = () => {
 					</FooterCard>
 					<FooterCard>
 						<FooterHeading>Company</FooterHeading>
-						<FooterLink>About us</FooterLink>
-						<FooterLink>Contact us</FooterLink>
-						<FooterLink>Careers</FooterLink>
-						<FooterLink>Support</FooterLink>
+						<FooterLink href=''>About us</FooterLink>
+						<FooterLink href=''>Contact us</FooterLink>
+						<FooterLink href=''>Careers</FooterLink>
+						<FooterLink href=''>Support</FooterLink>
 					</FooterCard>
 					<FooterCard>
-						<FooterLink>FAQ</FooterLink>
-						<FooterLink>Terms</FooterLink>
-						<FooterLink>Privacy</FooterLink>
-						<FooterLink>Blog</FooterLink>
+						<FooterLink href=''>FAQ</FooterLink>
+						<FooterLink href=''>Terms</FooterLink>
+						<FooterLink href=''>Privacy</FooterLink>
+						<FooterLink href=''>Blog</FooterLink>
 					</FooterCard>
 					<FooterCard>
 						<FooterHeading>Contact</FooterHeading>
-						<FooterLink>Phone: +1 605 722 2032</FooterLink>
-						<FooterLink>Email: example@mail.com </FooterLink>
-						<FooterLink>
+						<FooterLink href=''>Phone: +1 605 722 2032</FooterLink>
+						<FooterLink href=''>Email: example@mail.com </FooterLink>
+						<FooterLink href=''>
 							Address: Charlotte, North Carolina, United States
 						</FooterLink>
 					</FooterCard>

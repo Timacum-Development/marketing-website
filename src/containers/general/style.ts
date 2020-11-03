@@ -14,9 +14,14 @@ export const NavigationLink = styled.a`
 	font-style: italic;
 	color: ${color.white};
 	padding: 0 40px;
+	transition: 0.3s;
 
 	&:first-child {
 		padding: 0;
+	}
+
+	&:hover {
+		color: ${color.lighterLavander};
 	}
 `;
 

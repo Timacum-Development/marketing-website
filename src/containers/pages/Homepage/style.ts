@@ -6,17 +6,17 @@ import background from '../../../assets/background.png';
 import laptop from '../../../assets/laptop.png';
 
 export const Hero = styled.div`
-	height: calc(100vh - 60px);
+	height: calc(100vh - 60px); 
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	padding-bottom: 350px;
 }
 `;
 
 export const HeroWrapper = styled.section`
 	position: relative;
 	overflow: hidden;
-	padding-bottom: 210px;
 `;
 
 export const HeroBg = styled.div`
@@ -25,14 +25,14 @@ export const HeroBg = styled.div`
 	background: url(${background}) no-repeat top left;
 	background-size: cover;
 	position: absolute;
-	top: -395px;
+	top: -420px;
 	left: 124px;
 `;
 
 export const HeroIntro = styled.div`
 	min-width: 557px;
-	margin-left: 16px;
 	z-index: 10;
+	padding-top: 245px;
 `;
 
 export const MainTitle = styled.h1`
@@ -73,7 +73,6 @@ export const Partners = styled.section`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding-top: 180px;
 `;
 
 export const Text = styled.p`
@@ -98,18 +97,15 @@ export const LogoWrap = styled.div`
 `;
 
 export const TextWrap = styled.div`
-	/* margin-top: 180px; */
 	position: relative;
 `;
 
 export const AboutUs = styled.section`
 	display: flex;
 	flex-wrap: wrap;
-  align-items: center;
+	align-items: center;
 	justify-content: flex-start;
 	padding-bottom: 180px;
-	
-}
 `;
 
 export const AboutUsImg = styled.div`
@@ -146,7 +142,7 @@ export const SmallText = styled.p`
 	letter-spacing: 0.48px;
 	margin-bottom: 40px;
 
-	&:nth-child(1) {
+	&:first-of-type {
 		font-size: 1.375rem;
 		line-height: 2rem;
 		letter-spacing: 0.66px;
@@ -340,6 +336,7 @@ export const Subscribe = styled.input`
 	top: 10px;
 	color: ${color.lightPurple};
 	transition: 0.3s;
+	cursor: pointer;
 
 	&:hover {
 		background-color: ${color.lightPurple};
@@ -420,14 +417,15 @@ export const FooterLink = styled.a`
 	color: ${color.white};
 	font-style: italic;
 	font-weight: 300;
+	transition: 0.3s;
+
+	&:hover {
+		color: ${color.lighterLavander};
+	}
 `;
 
 export const FooterHeading = styled.h4`
-	text-transform: capitalize;
-
-	&:first-of-type {
-		text-transform: uppercase;
-	}
+	text-transform: uppercase;
 `;
 
 export const Shape = styled.img`
