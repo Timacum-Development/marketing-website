@@ -12,7 +12,11 @@ const Header = () => {
 			<nav>
 				<Nav />
 			</nav>
-			<MainLink text='Contact us' style={{ padding: '18px 40px 19px 40px' }} />
+			<MainLink
+				className='outline'
+				text='Contact us'
+				style={{ padding: '18px 40px 19px 40px' }}
+			/>
 		</HeaderWrap>
 	);
 };

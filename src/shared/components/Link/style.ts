@@ -19,15 +19,34 @@ export const LinkFirst = styled.a`
 		border-radius: 40px;
 		margin-right: 20px;
 
+		@media (max-width: 375px) {
+			margin-right: 0;
+		}
+
 		&:hover {
 			color: ${color.white};
 			background-color: transparent;
+		}
+	}
+
+	@media (max-width: 375px) {
+		&.outline {
+			display: none;
 		}
 	}
 `;
 
 export const LinkSecond = styled.a`
 	display: block;
+
+	@media (max-width: 375px) {
+		display: none;
+
+		&.display {
+			display: block;
+			margin-bottom: 40px;
+		}
+	}
 `;
 
 export const LinkThird = styled.a`

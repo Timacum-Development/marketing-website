@@ -120,7 +120,7 @@ const Homepage = () => {
 								style={{ padding: '18px 92px 19px 92px' }}
 								full
 							/>
-							<Button btnUrl={play} alt='' />
+							<Button btnUrl={play} alt='' className='top' />
 						</IntroBtns>
 					</HeroIntro>
 				</Hero>
@@ -131,13 +131,13 @@ const Homepage = () => {
 					<SecondTitle>With their marketing</SecondTitle>
 				</TextWrap>
 				<LogoWrap>
-					<Button btnUrl={LeftArrow} alt='' />
-					<MainLink icon logoUrl={Logo5} />
-					<MainLink icon logoUrl={Logo1} />
+					<Button btnUrl={LeftArrow} alt='' className='left' />
+					<MainLink icon logoUrl={Logo5} className='display' />
+					<MainLink icon logoUrl={Logo1} className='display' />
 					<MainLink icon logoUrl={Logo2} />
 					<MainLink icon logoUrl={Logo3} />
 					<MainLink icon logoUrl={Logo4} />
-					<Button btnUrl={RightArrow} alt='' />
+					<Button btnUrl={RightArrow} alt='' className='right' />
 				</LogoWrap>
 			</Partners>
 			<AboutUs className='container'>
@@ -341,7 +341,7 @@ const Homepage = () => {
 					</ServiceTextWrap>
 				</ServiceWrap>
 			</FooterService>
-			<MainFooter className='container'>
+			{/* <MainFooter className='container'>
 				<FooterCardWrap>
 					<FooterCard>
 						<Logo src={LogoFooter} />
@@ -383,7 +383,7 @@ const Homepage = () => {
 					</SocialIcon>
 					<ServiceText>© 2020 — All Rights Reserved</ServiceText>
 				</IconWrap>
-			</MainFooter>
+			</MainFooter> */}
 		</React.Fragment>
 	);
 };

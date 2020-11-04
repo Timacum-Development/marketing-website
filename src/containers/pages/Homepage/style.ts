@@ -4,6 +4,7 @@ import { color, font } from '../../../shared/utils/styles';
 // Assets
 import background from '../../../assets/background.png';
 import laptop from '../../../assets/laptop.png';
+import backgroundmobile from '../../../assets/hero-mobile.svg';
 
 export const Hero = styled.div`
 	height: calc(100vh - 60px); 
@@ -11,6 +12,10 @@ export const Hero = styled.div`
 	flex-wrap: wrap;
 	align-items: center;
 	padding-bottom: 350px;
+
+	@media (max-width: 375px) {
+		padding-bottom: 120px;
+	}
 }
 `;
 
@@ -27,12 +32,12 @@ export const HeroBg = styled.div`
 	position: absolute;
 	top: -420px;
 	left: 124px;
-`;
 
-export const HeroIntro = styled.div`
-	min-width: 557px;
-	z-index: 10;
-	padding-top: 245px;
+	@media (max-width: 375px) {
+		background: url(${backgroundmobile}) no-repeat center;
+		left: 0;
+		top: -520px;
+	}
 `;
 
 export const MainTitle = styled.h1`
@@ -40,6 +45,28 @@ export const MainTitle = styled.h1`
 	line-height: 7.5rem;
 	letter-spacing: 2.4px;
 	margin-bottom: 40px;
+
+	@media (max-width: 375px) {
+		font-size: 2.8125rem;
+		line-height: 4.25rem;
+		letter-spacing: 1.35px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+`;
+
+export const HeroIntro = styled.div`
+	min-width: 557px;
+	z-index: 10;
+	padding-top: 245px;
+
+	 @media (max-width: 375px) {
+		padding-top: 80px;
+		min-width: 335px;
+		position: absolute;
+    top: 431px;
+		}
+	} 
 `;
 
 export const MainTitleFirst = styled.span`
@@ -47,6 +74,12 @@ export const MainTitleFirst = styled.span`
 	font-size: 3.125rem;
 	line-height: 4.75rem;
 	letter-spacing: 1.5px;
+
+	@media (max-width: 375px) {
+		font-size: 1.75rem;
+		line-height: 2.625rem;
+		letter-spacing: 0.84px;
+	}
 `;
 
 export const MainTitleSecond = styled.span`
@@ -54,18 +87,36 @@ export const MainTitleSecond = styled.span`
 	font-size: 3.75rem;
 	line-height: 5.625rem;
 	letter-spacing: 1.8px;
+
+	@media (max-width: 375px) {
+		font-size: 2.125rem;
+		line-height: 3.1875rem;
+		letter-spacing: 1.02px;
+	}
 `;
 
 export const MainText = styled.p`
 	text-align: left;
 	max-width: 484px;
 	margin-bottom: 40px;
+
+	@media (max-width: 375px) {
+		font-size: 1rem;
+		line-height: 1.875rem;
+		letter-spacing: 0.48px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
 `;
 
 export const IntroBtns = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+
+	@media (max-width: 375px) {
+		justify-content: center;
+	}
 `;
 
 export const Partners = styled.section`
@@ -73,6 +124,10 @@ export const Partners = styled.section`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
+	@media (max-width: 375px) {
+		padding-top: 120px;
+	}
 `;
 
 export const Text = styled.p`
@@ -85,6 +140,10 @@ export const SecondTitle = styled.h2`
 	text-transform: capitalize;
 	text-align: center;
 	margin-bottom: 60px;
+
+	@media (max-width: 375px) {
+		margin-bottom: 40px;
+	}
 `;
 
 export const LogoWrap = styled.div`
@@ -94,6 +153,12 @@ export const LogoWrap = styled.div`
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 180px;
+
+	@media (max-width: 375px) {
+		margin-bottom: 120px;
+		position: relative;
+		justify-content: space-around;
+	}
 `;
 
 export const TextWrap = styled.div`
@@ -116,10 +181,25 @@ export const AboutUsImg = styled.div`
 	background: url(${laptop}) no-repeat;
 	background-size: cover;
 	margin-right: 63px;
+
+	@media (max-width: 375px) {
+		width: 333px;
+		height: 280px;
+		padding-bottom: 0;
+		background-size: contain;
+		margin-right: 0;
+	}
 `;
 
 export const AboutUsWrap = styled.div`
 	max-width: 520px;
+
+	@media (max-width: 375px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-top: 61px;
+	}
 `;
 
 export const ThirdTitle = styled.h3`
@@ -134,6 +214,10 @@ export const Line = styled.div`
 	background-color: ${color.white};
 	position: relative;
 	top: 25px;
+
+	@media (max-width: 375px) {
+		display: none;
+	}
 `;
 
 export const SmallText = styled.p`

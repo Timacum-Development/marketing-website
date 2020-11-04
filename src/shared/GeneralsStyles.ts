@@ -49,12 +49,23 @@ export default createGlobalStyle`
 		letter-spacing: 0.6px;
 		font-style: italic;
 		font-weight: 300;
+
+		@media (max-width: 375px) {
+			font-size: 0.875rem;
+			letter-spacing: 0.42px;
+		}
 	}
 
 	h2 {
 		font-size: 2.5rem;
 		line-height: 3.75rem;
 		letter-spacing: 1.2px;
+
+		@media (max-width: 375px) {
+			font-size: 1.5rem;
+			line-height: 2.1875rem;
+			letter-spacing: 0.72px;
+		}
 	}
 
 	h3 {

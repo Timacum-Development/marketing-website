@@ -4,7 +4,17 @@ import { LinkFirst, LinkSecond, LinkThird } from './style';
 const MainLink = (props: any) => {
 	console.log(props);
 
-	const { text, full, onClick, style, icon, logoUrl, plus, plusUrl } = props;
+	const {
+		text,
+		full,
+		onClick,
+		style,
+		icon,
+		logoUrl,
+		plus,
+		plusUrl,
+		className,
+	} = props;
 	return (
 		<React.Fragment>
 			{!icon && !plus ? (
@@ -13,13 +23,17 @@ const MainLink = (props: any) => {
 					// style={{ backgroundColor: variant ? 'red' : 'green' }}
 					// className={variant === 'outline' ? 'klasa1' : 'klasa2'}
 					// className={outline ? 'klasa1' : 'klasa2'}
-					className={full ? 'full' : ''}
+					className={full ? 'full' : className}
 					onClick={onClick}
 					href='#'>
 					{text}
 				</LinkFirst>
 			) : !plus && !plusUrl ? (
-				<LinkSecond style={style} onClick={onClick} href='#'>
+				<LinkSecond
+					className={className}
+					style={style}
+					onClick={onClick}
+					href='#'>
 					<img src={logoUrl} alt='' />
 				</LinkSecond>
 			) : (

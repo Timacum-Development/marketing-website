@@ -13,4 +13,8 @@ export const HeaderWrap = styled.header`
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
+
+	@media (max-width: 375px) {
+		padding: 20px;
+	}
 `;

@@ -1,5 +1,11 @@
 import React from 'react';
-import { Navigation, NavigationLink, Logo } from '../general/style';
+import {
+	Navigation,
+	NavigationLink,
+	Logo,
+	Burger,
+	BurgerLine,
+} from '../general/style';
 
 // Assets
 import LogoImg from '../../assets/logo.svg';
@@ -15,6 +21,11 @@ const Nav = () => {
 			<NavigationLink href='#'>Services</NavigationLink>
 			<NavigationLink href='#'>Blog</NavigationLink>
 			<NavigationLink href='#'>Portfolio</NavigationLink>
+			<Burger>
+				<BurgerLine />
+				<BurgerLine />
+				<BurgerLine />
+			</Burger>
 		</Navigation>
 	);
 };
