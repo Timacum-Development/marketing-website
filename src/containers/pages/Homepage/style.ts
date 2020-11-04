@@ -126,7 +126,7 @@ export const Partners = styled.section`
 	justify-content: center;
 
 	@media (max-width: 375px) {
-		padding-top: 120px;
+		padding: 120px 0;
 	}
 `;
 
@@ -155,7 +155,7 @@ export const LogoWrap = styled.div`
 	margin-bottom: 180px;
 
 	@media (max-width: 375px) {
-		margin-bottom: 120px;
+		margin-bottom: 0;
 		position: relative;
 		justify-content: space-around;
 	}
@@ -163,6 +163,12 @@ export const LogoWrap = styled.div`
 
 export const TextWrap = styled.div`
 	position: relative;
+
+	@media (max-width: 375px) {
+		&.text-padding {
+			padding: 0 42px;
+		}
+	}
 `;
 
 export const AboutUs = styled.section`
@@ -171,6 +177,11 @@ export const AboutUs = styled.section`
 	align-items: center;
 	justify-content: flex-start;
 	padding-bottom: 180px;
+
+	@media (max-width: 375px) {
+		padding-bottom: 120px;
+		justify-content: center;
+	}
 `;
 
 export const AboutUsImg = styled.div`
@@ -198,7 +209,7 @@ export const AboutUsWrap = styled.div`
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		padding-top: 61px;
+		padding: 61px 20px 0 20px;
 	}
 `;
 
@@ -206,6 +217,10 @@ export const ThirdTitle = styled.h3`
 	text-transform: capitalize;
 	margin-bottom: 40px;
 	text-align: left;
+
+	@media (max-width) {
+		margin-bottom: 20px;
+	}
 `;
 
 export const Line = styled.div`
@@ -231,6 +246,19 @@ export const SmallText = styled.p`
 		line-height: 2rem;
 		letter-spacing: 0.66px;
 	}
+
+	@media (max-width: 375px) {
+		margin-bottom: 20px;
+
+		&:first-of-type {
+			font-size: 1.125rem;
+			letter-spacing: 0.54px;
+		}
+
+		&:last-of-type {
+			margin-bottom: 40px;
+		}
+	}
 `;
 
 export const AboutLineWrap = styled.div`
@@ -244,6 +272,10 @@ export const Numbers = styled.section`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
+	@media (max-width: 375px) {
+		padding: 0 20px;
+	}
 `;
 
 export const NumbersWrap = styled.div`
@@ -257,6 +289,14 @@ export const NumbersWrap = styled.div`
   justify-content: space-evenly;
   align-items: center;
 	margin-bottom: 180px;
+
+	@media (max-width: 375px) {
+		height: 553px;
+    padding: 80px 0;
+		margin-bottom: 120px;
+		justify-content: center;
+		align-content: center;
+	}
 }
 `;
 
@@ -273,6 +313,19 @@ export const LargeNumberWrap = styled.div`
 	display: block;
 `;
 
+export const NumberLine = styled.div`
+	width: 2px;
+	height: 66px;
+	background-color: ${color.lavander};
+
+	@media (max-width: 375px) {
+		transform: rotate(90deg) translateY(-50%);
+		position: relative;
+		bottom: -100px;
+		right: 50%;
+	}
+`;
+
 export const PurpleWrap = styled.section`
 	background-color: ${color.purple};
 	padding: 180px 0;
@@ -283,6 +336,10 @@ export const Services = styled.section`
 	flex-wrap: wrap;
 	justify-content: center;
 	padding-bottom: 180px;
+
+	@media (max-width: 375px) {
+		padding-bottom: 120px;
+	}
 `;
 
 export const CardWrap = styled.div`
@@ -292,6 +349,14 @@ export const CardWrap = styled.div`
 
 	&:nth-child(1) {
 		margin-bottom: 0;
+	}
+
+	@media (max-width: 375px) {
+		&.card-wrap {
+			flex-direction: row-reverse;
+			max-width: 375px;
+			position: relative;
+		}
 	}
 `;
 
@@ -323,7 +388,14 @@ export const ButtonWrap = styled.div`
 	margin-top: 62px;
 `;
 
-export const Blog = styled.section``;
+export const Blog = styled.section`
+	@media (max-width: 375px) {
+		position: relative;
+		z-index: 1;
+		overflow-x: hidden;
+		padding-top: 89px;
+	}
+`;
 
 export const FooterService = styled.div`
 	width: 100%;
@@ -344,12 +416,23 @@ export const DoubleShape = styled.img`
 	position: relative;
 	left: -200px;
 	top: -180px;
+
+	@media (max-width: 375px) {
+		left: -148px;
+		width: 256px;
+		height: 315px;
+	}
 `;
 export const Letter = styled.img`
 	display: block;
 	width: 173px;
 	height: 196px;
 	margin-bottom: 40px;
+
+	@media (max-width: 375px) {
+		width: 123px;
+		height: 138px;
+	}
 `;
 
 export const Circle = styled.img`
@@ -359,6 +442,11 @@ export const Circle = styled.img`
 	position: absolute;
 	right: 0;
 	top: 150px;
+
+	@media (max-width: 375px) {
+		width: 126px;
+		height: 98px;
+	}
 `;
 
 export const ServiceTextWrap = styled.div`
@@ -370,6 +458,10 @@ export const ServiceTextWrap = styled.div`
 	align-items: center;
 	position: absolute;
   top: 130px;
+
+	@media (max-width: 375px) {
+		position: static;
+	}
 }
 `;
 
@@ -385,6 +477,13 @@ export const ServiceText = styled.p`
 	letter-spacing: 0.48px;
 	max-width: 510px;
 	margin-bottom: 40px;
+
+	@media (max-width: 375px) {
+		font-size: 0.875rem;
+		line-height: 1.5rem;
+		letter-spacing: 0.42px;
+		margin: 20px 0 40px 0;
+	}
 `;
 
 export const SubscribeWrap = styled.div`
@@ -406,6 +505,11 @@ export const Email = styled.input`
 
 	&::placeholder {
 		color: ${color.white};
+	}
+
+	@media (max-width: 375px) {
+		padding: 20px;
+		height: 121px;
 	}
 `;
 
@@ -451,6 +555,18 @@ export const FooterCard = styled.div`
 	&:nth-child(4) {
 		max-width: 380px;
 	}
+
+	@media (max-width: 375px) {
+		width: 100%;
+
+		&:nth-child(2) {
+			max-width: 50%;
+		}
+
+		&:nth-child(3) {
+			max-width: 50%;
+		}
+	}
 `;
 
 export const FooterCardWrap = styled.div`
@@ -460,6 +576,10 @@ export const FooterCardWrap = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+
+	@media (max-width: 375px) {
+		max-width: 375px;
+	}
 `;
 
 export const FooterLine = styled.div`
@@ -473,6 +593,10 @@ export const IconWrap = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+
+	@media (max-width: 375px) {
+		justify-content: center;
+	}
 `;
 
 export const SocialIcon = styled.div``;
@@ -481,6 +605,12 @@ export const Icon = styled.img`
 	width: 40px;
 	height: 40px;
 	margin-right: 15px;
+
+	@media (max-width: 375px) {
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 `;
 
 export const FooterText = styled.p`
@@ -519,6 +649,11 @@ export const Shape = styled.img`
 	position: absolute;
   top: -75px;
 	left: -100px;
+
+	@media (max-width: 375px) {
+		top: -120px;
+    left: -61px;
+	}
 }
 `;
 
@@ -529,4 +664,11 @@ export const ShapeSecond = styled.img`
 	position: absolute;
 	right: -100px;
 	top: -70px;
+
+	@media (max-width: 375px) {
+		left: 200px;
+		width: 240px;
+		height: 229px;
+		z-index: -1;
+	}
 `;

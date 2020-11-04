@@ -72,6 +72,12 @@ export default createGlobalStyle`
 		font-size: 1.875rem;
 		line-height: 2.875rem;
 		letter-spacing: 0.9px;
+
+		@media (max-width: 375px) {
+			font-size: 1.5rem;
+			line-height: 2.1875rem;
+			letter-spacing: 0.72px;
+		}
 	}
 
 	h4 {

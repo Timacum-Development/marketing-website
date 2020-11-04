@@ -58,6 +58,7 @@ import {
 	ShapeSecond,
 	HeroWrapper,
 	FooterCardWrap,
+	NumberLine,
 } from './style';
 
 import { Logo } from '../../general/style';
@@ -131,13 +132,13 @@ const Homepage = () => {
 					<SecondTitle>With their marketing</SecondTitle>
 				</TextWrap>
 				<LogoWrap>
-					<Button btnUrl={LeftArrow} alt='' className='left' />
+					<Button btnUrl={LeftArrow} alt='' className='right' />
 					<MainLink icon logoUrl={Logo5} className='display' />
 					<MainLink icon logoUrl={Logo1} className='display' />
 					<MainLink icon logoUrl={Logo2} />
 					<MainLink icon logoUrl={Logo3} />
 					<MainLink icon logoUrl={Logo4} />
-					<Button btnUrl={RightArrow} alt='' className='right' />
+					<Button btnUrl={RightArrow} alt='' className='left' />
 				</LogoWrap>
 			</Partners>
 			<AboutUs className='container'>
@@ -179,20 +180,20 @@ const Homepage = () => {
 			</AboutUs>
 			<Numbers className='container'>
 				<TextWrap>
-					<Text>Company Website Design Full Services.</Text>
-					<SecondTitle>
-						Digital Marketing Agency & Software Development
-					</SecondTitle>
+					<Text>Digital Marketing Agency & Software Development</Text>
+					<SecondTitle>Company Website Design Full Services.</SecondTitle>
 				</TextWrap>
 				<NumbersWrap>
 					<LargeNumberWrap>
 						<LargeNumber>16K</LargeNumber>
 						<Text>Clients</Text>
 					</LargeNumberWrap>
+					<NumberLine />
 					<LargeNumberWrap>
 						<LargeNumber>189+</LargeNumber>
 						<Text>Team Members</Text>
 					</LargeNumberWrap>
+					<NumberLine />
 					<LargeNumberWrap>
 						<LargeNumber>13K</LargeNumber>
 						<Text>Active Work</Text>
@@ -201,11 +202,11 @@ const Homepage = () => {
 			</Numbers>
 			<PurpleWrap className='container-fluid'>
 				<Services className='container'>
-					<TextWrap>
+					<TextWrap className='text-padding'>
 						<Text>We are a digital agency</Text>
 						<SecondTitle>Experts services to change business</SecondTitle>
 					</TextWrap>
-					<CardWrap>
+					<CardWrap className='card-wrap'>
 						<Card
 							heading='Link Building'
 							text='We ll earn white hat backlinks and send qualified traffic to your business through guest posting.'
@@ -237,7 +238,7 @@ const Homepage = () => {
 					</CardWrap>
 				</Services>
 				<Portfolio className='container'>
-					<TextWrap>
+					<TextWrap className='text-padding'>
 						<Shape src={Shape1} />
 						<Text>Awesome Portfolio</Text>
 						<SecondTitle>We Have A Great Portfolio To Check</SecondTitle>
@@ -341,7 +342,7 @@ const Homepage = () => {
 					</ServiceTextWrap>
 				</ServiceWrap>
 			</FooterService>
-			{/* <MainFooter className='container'>
+			<MainFooter className='container'>
 				<FooterCardWrap>
 					<FooterCard>
 						<Logo src={LogoFooter} />
@@ -383,7 +384,7 @@ const Homepage = () => {
 					</SocialIcon>
 					<ServiceText>© 2020 — All Rights Reserved</ServiceText>
 				</IconWrap>
-			</MainFooter> */}
+			</MainFooter>
 		</React.Fragment>
 	);
 };

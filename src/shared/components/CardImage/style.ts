@@ -6,6 +6,10 @@ export const ImgCard = styled.img`
 	width: 120px;
 	height: 120px;
 	margin-right: 40px;
+
+	@media (max-width: 375px) {
+		margin-right: 0;
+	}
 `;
 
 export const PortfolioImg = styled.img`

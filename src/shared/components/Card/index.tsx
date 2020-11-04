@@ -12,7 +12,17 @@ import MainLink from '../Link/index';
 const Card = (props: any) => {
 	console.log('PROPS' + props);
 
-	const { text, heading, url, plus, cross, project, portfolio, style } = props;
+	const {
+		text,
+		heading,
+		url,
+		plus,
+		cross,
+		project,
+		portfolio,
+		style,
+		className,
+	} = props;
 
 	return (
 		<React.Fragment>

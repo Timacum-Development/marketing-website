@@ -20,6 +20,30 @@ export const MainCard = styled.div`
 	&:nth-child(4) {
 		margin-bottom: 0;
 	}
+
+	@media (max-width: 375px) {
+		margin-bottom: 0;
+		padding: 30px 30px 95px 0;
+
+		&:nth-child(odd) {
+			display: none;
+		}
+
+		&:nth-child(4) {
+			min-width: 235px;
+			width: 100%;
+    	position: absolute;
+    	left: -114px;
+			margin-right: 20px;
+}
+		}
+
+		&:nth-child(2) {
+			min-width: 120px;
+			width: 100%;
+			padding: 30px 0 95px 30px;
+		}
+	}
 `;
 
 export const SecondCard = styled.div`
@@ -30,6 +54,20 @@ export const SecondCard = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
+	@media (max-width: 375px) {
+		&:nth-child(2) {
+			display: none;
+		}
+
+		&:nth-child(3) {
+			display: none;
+		}
+
+		&:nth-child(4) {
+			display: none;
+		}
+	}
 `;
 
 export const ThirdCard = styled.div`
@@ -37,4 +75,18 @@ export const ThirdCard = styled.div`
 	border-radius: 30px;
 	background-color: ${color.lightPurple};
 	position: relative;
+
+	@media (max-width: 375px) {
+		&:nth-child(2) {
+			display: none;
+		}
+
+		&:nth-child(3) {
+			display: none;
+		}
+
+		&:nth-child(4) {
+			display: none;
+		}
+	}
 `;
