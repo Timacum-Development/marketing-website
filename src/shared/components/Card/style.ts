@@ -25,24 +25,23 @@ export const MainCard = styled.div`
 		margin-bottom: 0;
 		padding: 30px 30px 95px 0;
 
-		&:nth-child(odd) {
+		/* &:nth-child(odd) {
 			display: none;
 		}
 
 		&:nth-child(4) {
 			min-width: 235px;
 			width: 100%;
-    	position: absolute;
-    	left: -114px;
+			position: absolute;
+			left: -114px;
 			margin-right: 20px;
-}
 		}
 
 		&:nth-child(2) {
 			min-width: 120px;
 			width: 100%;
 			padding: 30px 0 95px 30px;
-		}
+		} */
 	}
 `;
 
@@ -56,6 +55,8 @@ export const SecondCard = styled.div`
 	justify-content: center;
 
 	@media (max-width: 375px) {
+		width: 336px;
+
 		&:nth-child(2) {
 			display: none;
 		}
@@ -77,6 +78,9 @@ export const ThirdCard = styled.div`
 	position: relative;
 
 	@media (max-width: 375px) {
+		width: 336px;
+		height: 470px;
+
 		&:nth-child(2) {
 			display: none;
 		}

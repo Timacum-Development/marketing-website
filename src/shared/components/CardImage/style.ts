@@ -15,4 +15,8 @@ export const ImgCard = styled.img`
 export const PortfolioImg = styled.img`
 	width: 380px;
 	height: 242px;
+
+	@media (max-width: 375px) {
+		width: 100%;
+	}
 `;

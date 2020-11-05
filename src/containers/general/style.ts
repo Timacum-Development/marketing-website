@@ -23,6 +23,13 @@ export const Logo = styled.img`
 	display: block;
 	width: 50px;
 	height: 50px;
+
+	@media (max-width: 375px) {
+		margin-left: 20px;
+
+		&.logo-footer {
+		margin-left: 0;
+	}
 `;
 
 export const Burger = styled.div`

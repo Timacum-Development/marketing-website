@@ -15,6 +15,6 @@ export const HeaderWrap = styled.header`
 	transform: translateX(-50%);
 
 	@media (max-width: 375px) {
-		padding: 20px;
+		padding: 20px 0;
 	}
 `;

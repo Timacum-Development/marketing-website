@@ -274,7 +274,7 @@ export const Numbers = styled.section`
 	justify-content: center;
 
 	@media (max-width: 375px) {
-		padding: 0 20px;
+		max-width: 375px;
 	}
 `;
 
@@ -291,11 +291,13 @@ export const NumbersWrap = styled.div`
 	margin-bottom: 180px;
 
 	@media (max-width: 375px) {
-		height: 553px;
+		max-width: 332px;
+		height: auto;
     padding: 80px 0;
 		margin-bottom: 120px;
 		justify-content: center;
 		align-content: center;
+		flex-direction: column;
 	}
 }
 `;
@@ -319,16 +321,17 @@ export const NumberLine = styled.div`
 	background-color: ${color.lavander};
 
 	@media (max-width: 375px) {
-		transform: rotate(90deg) translateY(-50%);
-		position: relative;
-		bottom: -100px;
-		right: 50%;
+		transform: rotate(90deg);
 	}
 `;
 
 export const PurpleWrap = styled.section`
 	background-color: ${color.purple};
 	padding: 180px 0;
+
+	@media (max-width: 375px) {
+		padding: 120px 0;
+	}
 `;
 
 export const Services = styled.section`
@@ -339,6 +342,7 @@ export const Services = styled.section`
 
 	@media (max-width: 375px) {
 		padding-bottom: 120px;
+		overflow: hidden;
 	}
 `;
 
@@ -353,9 +357,13 @@ export const CardWrap = styled.div`
 
 	@media (max-width: 375px) {
 		&.card-wrap {
-			flex-direction: row-reverse;
-			max-width: 375px;
-			position: relative;
+			position: absolute;
+		}
+		
+		&.centered-wrap {
+			justify-content: center;
+		}
+
 		}
 	}
 `;
@@ -379,6 +387,10 @@ export const SmallTxt = styled.p`
 export const Portfolio = styled.section`
 	display: block;
 	padding-bottom: 180px;
+
+	@media (max-width: 375px) {
+		padding-bottom: 0;
+	}
 `;
 
 export const ButtonWrap = styled.div`
@@ -393,7 +405,7 @@ export const Blog = styled.section`
 		position: relative;
 		z-index: 1;
 		overflow-x: hidden;
-		padding-top: 89px;
+		padding-top: 120px;
 	}
 `;
 
@@ -446,6 +458,7 @@ export const Circle = styled.img`
 	@media (max-width: 375px) {
 		width: 126px;
 		height: 98px;
+		top: 90%;
 	}
 `;
 
@@ -460,7 +473,8 @@ export const ServiceTextWrap = styled.div`
   top: 130px;
 
 	@media (max-width: 375px) {
-		position: static;
+		position: relative;
+		top: -223px;
 	}
 }
 `;
@@ -493,6 +507,10 @@ export const SubscribeWrap = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	position: relative;
+
+	@media (max-width: 375px) {
+		max-width: 335px;
+	}
 `;
 
 export const Email = styled.input`
@@ -508,8 +526,17 @@ export const Email = styled.input`
 	}
 
 	@media (max-width: 375px) {
-		padding: 20px;
+		width: 293px;
+		padding: 30px 20px 20px 20px;
 		height: 121px;
+		vertical-align: top;
+
+		&::placeholder {
+			font-size: 1rem;
+			line-height: 1.5625rem;
+			letter-spacing: 0.48px;
+			text-align: center;
+		}
 	}
 `;
 
@@ -530,6 +557,13 @@ export const Subscribe = styled.input`
 		background-color: ${color.lightPurple};
 		color: ${color.white};
 	}
+
+	@media (max-width: 375px) {
+		width: 295px;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 100px;
+	}
 `;
 
 export const MainFooter = styled.footer`
@@ -538,6 +572,7 @@ export const MainFooter = styled.footer`
 
 export const FooterCard = styled.div`
 	width: 25%;
+	margin-bottom: 40px;
 
 	&:nth-child(1) {
 		max-width: 380px;
@@ -554,17 +589,23 @@ export const FooterCard = styled.div`
 
 	&:nth-child(4) {
 		max-width: 380px;
+		margin-bottom: 0;
 	}
 
 	@media (max-width: 375px) {
 		width: 100%;
+		padding: 0 20px;
 
 		&:nth-child(2) {
-			max-width: 50%;
+			max-width: 31%;
 		}
 
 		&:nth-child(3) {
-			max-width: 50%;
+			max-width: 40%;
+		}
+
+		&:nth-child(4) {
+			max-width: 325px;
 		}
 	}
 `;
@@ -579,6 +620,7 @@ export const FooterCardWrap = styled.div`
 
 	@media (max-width: 375px) {
 		max-width: 375px;
+		padding-top: 0;
 	}
 `;
 
@@ -636,6 +678,10 @@ export const FooterLink = styled.a`
 	&:hover {
 		color: ${color.lighterLavander};
 	}
+
+	@media (max-width: 375px) {
+		margin-bottom: 0;
+	}
 `;
 
 export const FooterHeading = styled.h4`
@@ -667,6 +713,7 @@ export const ShapeSecond = styled.img`
 
 	@media (max-width: 375px) {
 		left: 200px;
+		top: -30px;
 		width: 240px;
 		height: 229px;
 		z-index: -1;

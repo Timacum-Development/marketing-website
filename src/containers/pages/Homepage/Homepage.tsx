@@ -243,7 +243,7 @@ const Homepage = () => {
 						<Text>Awesome Portfolio</Text>
 						<SecondTitle>We Have A Great Portfolio To Check</SecondTitle>
 					</TextWrap>
-					<CardWrap>
+					<CardWrap className='centered-wrap'>
 						<Card
 							portfolio={People1}
 							heading='Web Design project'
@@ -284,7 +284,7 @@ const Homepage = () => {
 						<SecondTitle>Our Blog & article</SecondTitle>
 						<ShapeSecond src={Shape2} />
 					</TextWrap>
-					<CardWrap>
+					<CardWrap className='centered-wrap'>
 						<Card
 							text='August 27, 2020'
 							portfolio={Post3}
@@ -345,7 +345,7 @@ const Homepage = () => {
 			<MainFooter className='container'>
 				<FooterCardWrap>
 					<FooterCard>
-						<Logo src={LogoFooter} />
+						<Logo src={LogoFooter} className='logo-footer' />
 						<FooterText>
 							Proin ac quam et lectus vestibulum blandit. Nunc maximus nibh at
 							placerat tincidunt. Nam sem lacus, ornare non ante sed, ultricies
