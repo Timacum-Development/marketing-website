@@ -126,7 +126,8 @@ export const Partners = styled.section`
 	justify-content: center;
 
 	@media (max-width: 375px) {
-		padding: 120px 0;
+		padding: 0 0 120px 0;
+		overflow-x: hidden;
 	}
 `;
 
@@ -168,6 +169,7 @@ export const TextWrap = styled.div`
 		&.text-padding {
 			padding: 0 42px;
 		}
+		padding: 0 15px;
 	}
 `;
 
@@ -341,8 +343,9 @@ export const Services = styled.section`
 	padding-bottom: 180px;
 
 	@media (max-width: 375px) {
-		padding-bottom: 120px;
+		padding-bottom: 550px;
 		overflow: hidden;
+		position: relative;
 	}
 `;
 
@@ -357,7 +360,12 @@ export const CardWrap = styled.div`
 
 	@media (max-width: 375px) {
 		&.card-wrap {
-			position: absolute;
+		flex-wrap: nowrap;
+    position: absolute;
+    top: 158px;
+		left: 50%;
+    transform: translateX(-45%);
+		flex-direction: row-reverse;
 		}
 		
 		&.centered-wrap {
@@ -474,7 +482,8 @@ export const ServiceTextWrap = styled.div`
 
 	@media (max-width: 375px) {
 		position: relative;
-		top: -223px;
+    top: -223px;
+		padding: 0 13px;
 	}
 }
 `;
@@ -527,8 +536,7 @@ export const Email = styled.input`
 
 	@media (max-width: 375px) {
 		width: 293px;
-		padding: 30px 20px 20px 20px;
-		height: 121px;
+		padding: 30px 20px 116px 20px;
 		vertical-align: top;
 
 		&::placeholder {
@@ -536,6 +544,7 @@ export const Email = styled.input`
 			line-height: 1.5625rem;
 			letter-spacing: 0.48px;
 			text-align: center;
+			margin-bottom: 50px;
 		}
 	}
 `;
@@ -628,6 +637,12 @@ export const FooterLine = styled.div`
 	width: 100%;
 	border: 1px solid ${color.lightLavander};
 	margin-bottom: 40px;
+
+	@media (max-width: 375px) {
+		max-width: 335px;
+		position: relative;
+		left: 20px;
+	}
 `;
 
 export const IconWrap = styled.div`
@@ -717,5 +732,30 @@ export const ShapeSecond = styled.img`
 		width: 240px;
 		height: 229px;
 		z-index: -1;
+	}
+`;
+
+export const ShapeMobileFirst = styled.img`
+	display: none;
+	width: 128px;
+	height: 108px;
+
+	@media (max-width: 375px) {
+		display: block;
+		position: relative;
+		left: -44px;
+		top: 60px;
+	}
+`;
+
+export const ShapeMobileSecond = styled.img`
+	display: none;
+	width: 91px;
+	height: 92px;
+
+	@media (max-width: 375px) {
+		display: block;
+		position: relative;
+		left: 310px;
 	}
 `;

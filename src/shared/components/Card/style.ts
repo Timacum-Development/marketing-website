@@ -23,25 +23,9 @@ export const MainCard = styled.div`
 
 	@media (max-width: 375px) {
 		margin-bottom: 0;
-		padding: 30px 30px 95px 0;
-
-		/* &:nth-child(odd) {
-			display: none;
-		}
-
-		&:nth-child(4) {
-			min-width: 235px;
-			width: 100%;
-			position: absolute;
-			left: -114px;
-			margin-right: 20px;
-		}
-
-		&:nth-child(2) {
-			min-width: 120px;
-			width: 100%;
-			padding: 30px 0 95px 30px;
-		} */
+		padding: 30px 30px 95px 30px;
+		min-width: 355px;
+		margin-right: 20px;
 	}
 `;
 

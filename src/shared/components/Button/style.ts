@@ -21,13 +21,13 @@ export const MainButton = styled.img`
 		&.left {
 			position: absolute;
 			bottom: -40px;
-			left: 50%;
+			left: 30%;
 		}
 
 		&.right {
 			position: absolute;
 			bottom: -40px;
-			right: 50%;
+			right: 25%;
 			margin-right: 18px;
 		}
 	}

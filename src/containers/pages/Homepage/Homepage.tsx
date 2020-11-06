@@ -59,6 +59,8 @@ import {
 	HeroWrapper,
 	FooterCardWrap,
 	NumberLine,
+	ShapeMobileFirst,
+	ShapeMobileSecond,
 } from './style';
 
 import { Logo } from '../../general/style';
@@ -95,6 +97,8 @@ import Youtube from '../../../assets/youtube.svg';
 import Instagram from '../../../assets/instagram.svg';
 import Shape1 from '../../../assets/circle-blurred.png';
 import Shape2 from '../../../assets/purple-shape.png';
+import ShapeMobile1 from '../../../assets/shape-mobile.svg';
+import ShapeMobile2 from '../../../assets/shape2-mobile.svg';
 
 import { LinkSecond } from '../../../shared/components/Link/style';
 import { ImgCard } from '../../../shared/components/CardImage/style';
@@ -105,6 +109,7 @@ const Homepage = () => {
 			<HeroWrapper className='container-fluid'>
 				<Hero className='container'>
 					<HeroBg />
+					<ShapeMobileFirst src={ShapeMobile1} />
 					<HeroIntro>
 						<MainTitle>
 							<MainTitleFirst>We help to </MainTitleFirst>Solve Clients
@@ -125,6 +130,7 @@ const Homepage = () => {
 						</IntroBtns>
 					</HeroIntro>
 				</Hero>
+				<ShapeMobileSecond src={ShapeMobile2} />
 			</HeroWrapper>
 			<Partners className='container'>
 				<TextWrap>
