@@ -255,28 +255,48 @@ const Homepage = () => {
 							heading='Web Design project'
 							text='UX/UI Design'
 							project
-							style={{ textAlign: 'center' }}
+							style={{
+								padding: '40px',
+								display: 'flex',
+								flexWrap: 'wrap',
+								justifyContent: 'center',
+							}}
 						/>
 						<Card
 							portfolio={People2}
 							heading='Web Design project'
 							text='UX/UI Design'
 							project
-							style={{ textAlign: 'center' }}
+							style={{
+								padding: '40px',
+								display: 'flex',
+								flexWrap: 'wrap',
+								justifyContent: 'center',
+							}}
 						/>
 						<Card
 							portfolio={People3}
 							heading='Web Design project'
 							text='UX/UI Design'
 							project
-							style={{ textAlign: 'center' }}
+							style={{
+								padding: '40px',
+								display: 'flex',
+								flexWrap: 'wrap',
+								justifyContent: 'center',
+							}}
 						/>
 						<Card
 							portfolio={People4}
 							heading='Web Design project'
 							text='UX/UI Design'
 							project
-							style={{ textAlign: 'center' }}
+							style={{
+								padding: '40px',
+								display: 'flex',
+								flexWrap: 'wrap',
+								justifyContent: 'center',
+							}}
 						/>
 					</CardWrap>
 					<ButtonWrap>
@@ -297,7 +317,7 @@ const Homepage = () => {
 							heading='Why we decided to create Build Your DXP'
 							plus
 							cross={ImgPlus}
-							style={{ padding: '40px 40px 74px 40px' }}
+							style={{ padding: '40px 40px 81px 40px' }}
 						/>
 						<Card
 							text='August 27, 2020'
@@ -305,7 +325,7 @@ const Homepage = () => {
 							heading='Why we decided to create Build Your DXP'
 							plus
 							cross={ImgPlus}
-							style={{ padding: '40px 40px 74px 40px' }}
+							style={{ padding: '40px 40px 81px 40px' }}
 						/>
 						<Card
 							text='August 27, 2020'
@@ -313,7 +333,7 @@ const Homepage = () => {
 							heading='Why we decided to create Build Your DXP'
 							plus
 							cross={ImgPlus}
-							style={{ padding: '40px 40px 74px 40px' }}
+							style={{ padding: '40px 40px 81px 40px' }}
 						/>
 						<Card
 							text='August 27, 2020'
@@ -321,7 +341,7 @@ const Homepage = () => {
 							heading='Why we decided to create Build Your DXP'
 							plus
 							cross={ImgPlus}
-							style={{ padding: '40px 40px 74px 40px' }}
+							style={{ padding: '40px 40px 81px 40px' }}
 						/>
 					</CardWrap>
 					<ButtonWrap>

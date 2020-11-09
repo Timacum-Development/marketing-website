@@ -359,6 +359,8 @@ export const CardWrap = styled.div`
 	}
 
 	@media (max-width: 375px) {
+		padding: 0 20px;
+
 		&.card-wrap {
 		flex-wrap: nowrap;
     position: absolute;
@@ -744,7 +746,7 @@ export const ShapeMobileFirst = styled.img`
 		display: block;
 		position: relative;
 		left: -44px;
-		top: 60px;
+		top: 70px;
 	}
 `;
 

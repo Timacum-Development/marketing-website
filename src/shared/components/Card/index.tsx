@@ -40,9 +40,9 @@ const Card = (props: any) => {
 			) : !plus && project ? (
 				<SecondCard>
 					<CardImg portfolioUrl={portfolio} />
-					<CardText>
+					<CardText style={style}>
 						<h4>{heading}</h4>
-						<SmallTxt style={style}>{text}</SmallTxt>
+						<SmallTxt>{text}</SmallTxt>
 					</CardText>
 				</SecondCard>
 			) : (

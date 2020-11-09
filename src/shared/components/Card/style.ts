@@ -32,14 +32,13 @@ export const MainCard = styled.div`
 export const SecondCard = styled.div`
 	background-color: ${color.lightPurple};
 	border-radius: 30px;
-	width: 380px;
-	height: 381px;
+	width: 23.2%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 
 	@media (max-width: 375px) {
-		width: 336px;
+		width: 100%;
 
 		&:nth-child(2) {
 			display: none;
@@ -56,14 +55,13 @@ export const SecondCard = styled.div`
 `;
 
 export const ThirdCard = styled.div`
-	width: 380px;
+	width: 23.2%;
 	border-radius: 30px;
 	background-color: ${color.lightPurple};
 	position: relative;
 
 	@media (max-width: 375px) {
-		width: 336px;
-		height: 470px;
+		width: 100%;
 
 		&:nth-child(2) {
 			display: none;
