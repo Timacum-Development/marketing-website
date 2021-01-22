@@ -7,7 +7,7 @@ import laptop from '../../../assets/laptop.png';
 import backgroundmobile from '../../../assets/hero-mobile.svg';
 
 export const Hero = styled.div`
-	height: calc(100vh - 60px); 
+	height: calc(100vh - 60px);
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -16,7 +16,6 @@ export const Hero = styled.div`
 	@media (max-width: 375px) {
 		padding-bottom: 120px;
 	}
-}
 `;
 
 export const HeroWrapper = styled.section`
@@ -60,13 +59,12 @@ export const HeroIntro = styled.div`
 	z-index: 10;
 	padding-top: 245px;
 
-	 @media (max-width: 375px) {
+	@media (max-width: 375px) {
 		padding-top: 80px;
 		min-width: 335px;
 		position: absolute;
-    top: 431px;
-		}
-	} 
+		top: 431px;
+	}
 `;
 
 export const MainTitleFirst = styled.span`
@@ -287,21 +285,20 @@ export const NumbersWrap = styled.div`
 	border: 1px solid ${color.lightLavander};
 	border-radius: 139px;
 	display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
 	margin-bottom: 180px;
 
 	@media (max-width: 375px) {
 		max-width: 332px;
 		height: auto;
-    padding: 80px 0;
+		padding: 80px 0;
 		margin-bottom: 120px;
 		justify-content: center;
 		align-content: center;
 		flex-direction: column;
 	}
-}
 `;
 
 export const LargeNumber = styled.span`
@@ -362,18 +359,16 @@ export const CardWrap = styled.div`
 		padding: 0 20px;
 
 		&.card-wrap {
-		flex-wrap: nowrap;
-    position: absolute;
-    top: 158px;
-		left: 50%;
-    transform: translateX(-45%);
-		flex-direction: row-reverse;
-		}
-		
-		&.centered-wrap {
-			justify-content: center;
+			flex-wrap: nowrap;
+			position: absolute;
+			top: 158px;
+			left: 50%;
+			transform: translateX(-45%);
+			flex-direction: row-reverse;
 		}
 
+		&.centered-wrap {
+			justify-content: center;
 		}
 	}
 `;
@@ -480,14 +475,13 @@ export const ServiceTextWrap = styled.div`
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
-  top: 130px;
+	top: 130px;
 
 	@media (max-width: 375px) {
 		position: relative;
-    top: -223px;
+		top: -223px;
 		padding: 0 13px;
 	}
-}
 `;
 
 export const ServiceTitle = styled.h2`
@@ -710,14 +704,13 @@ export const Shape = styled.img`
 	width: 179px;
 	height: 179px;
 	position: absolute;
-  top: -75px;
+	top: -75px;
 	left: -100px;
 
 	@media (max-width: 375px) {
 		top: -120px;
-    left: -61px;
+		left: -61px;
 	}
-}
 `;
 
 export const ShapeSecond = styled.img`

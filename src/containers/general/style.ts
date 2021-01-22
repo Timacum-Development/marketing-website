@@ -28,7 +28,8 @@ export const Logo = styled.img`
 		margin-left: 20px;
 
 		&.logo-footer {
-		margin-left: 0;
+			margin-left: 0;
+		}
 	}
 `;
 
