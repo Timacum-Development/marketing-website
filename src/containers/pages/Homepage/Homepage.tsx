@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainLink, Button, Card, CardImg } from '../../../shared/components/';
+import { MainLink, Button, Card } from '../../../shared/components/';
 
 import {
 	Hero,
@@ -29,8 +29,6 @@ import {
 	PurpleWrap,
 	Services,
 	CardWrap,
-	InsideCard,
-	CardText,
 	Portfolio,
 	ButtonWrap,
 	Blog,
@@ -99,9 +97,6 @@ import Shape1 from '../../../assets/circle-blurred.png';
 import Shape2 from '../../../assets/purple-shape.png';
 import ShapeMobile1 from '../../../assets/shape-mobile.svg';
 import ShapeMobile2 from '../../../assets/shape2-mobile.svg';
-
-import { LinkSecond } from '../../../shared/components/Link/style';
-import { ImgCard } from '../../../shared/components/CardImage/style';
 
 const Homepage = () => {
 	return (

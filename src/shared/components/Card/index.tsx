@@ -4,7 +4,6 @@ import {
 	InsideCard,
 	CardText,
 	SmallTxt,
-	Portfolio,
 } from '../../../containers/pages/Homepage/style';
 import CardImg from '../CardImage/index';
 import MainLink from '../Link/index';
@@ -12,17 +11,7 @@ import MainLink from '../Link/index';
 const Card = (props: any) => {
 	console.log('PROPS' + props);
 
-	const {
-		text,
-		heading,
-		url,
-		plus,
-		cross,
-		project,
-		portfolio,
-		style,
-		className,
-	} = props;
+	const { text, heading, url, plus, cross, project, portfolio, style } = props;
 
 	return (
 		<React.Fragment>

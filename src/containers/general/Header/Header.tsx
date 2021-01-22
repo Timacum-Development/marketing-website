@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
 import { HeaderWrap } from '../Header/style';
 import { MainLink } from '../../../shared/components';
 

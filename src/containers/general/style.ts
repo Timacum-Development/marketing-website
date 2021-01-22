@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, font } from '../../shared/utils/styles';
+import { color } from '../../shared/utils/styles';
 
 export const NavigationLink = styled.a`
 	font-size: 1.25rem;

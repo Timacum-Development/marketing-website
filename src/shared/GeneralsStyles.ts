@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { color, font } from './utils/styles';
+import { color } from './utils/styles';
 
 export default createGlobalStyle`
 	body,

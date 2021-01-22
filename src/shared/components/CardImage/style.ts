@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { color, font } from '../../utils/styles';
 
 export const ImgCard = styled.img`
 	display: block;

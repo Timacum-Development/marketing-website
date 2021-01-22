@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, font } from '../../../shared/utils/styles';
+import { color } from '../../../shared/utils/styles';
 
 // Assets
 import background from '../../../assets/background.png';
